@@ -61,8 +61,4 @@ jobs:
           app-name: 'ITMD-543-Project-1'
           slot-name: 'Production'
           package: .
-
           
-
-
-
