@@ -1,0 +1,35 @@
+const menuItems = [
+  { name: "Hot Matcha Latte", category: "Hot", /*img: "img/hot-matcha.jpg",*/ price: "$5.50" },
+  { name: "Iced Matcha Latte", category: "Iced", /*img: "img/iced-matcha.jpg",*/ price: "$5.50" },
+  { name: "Espresso", category: "Hot", /*img: ,*/ price: "$4.00" },
+  { name: "Cappuccino", category: "Hot", /*img: ,*/ price: "$5.25" },
+  { name: "Latte", category: "Hot", /*img: ,*/ price: "$5.75" },
+  { name: "Iced Latte", category: "Iced", /*img: ,*/ price: "$5.50" },
+  { name: "Americano", category: "Hot", /*img: ,*/ price: "$5.00" },
+  { name: "Iced Americano", category: "Iced", /*img: ,*/ price: "$5.00" },
+  { name: "Caramel Frappe", category: "Iced", /*img: ,*/ price: "$6.00" },
+  { name: "Hot Chocolate", category: "Hot", /*img: ,*/ price: "$3.25" },
+  { name: "Tiramisu", category: "Dessert", /*img: ,*/ price: "$7.50" },
+  { name: "Blueberry Muffin", category: "Dessert", /*img: ,*/ price: "$7.50" },
+  { name: "Strawberry Cheesecake", category: "Dessert", /*img: ,*/ price: "$8.00" },
+  { name: "Glazed Donut", category: "Dessert", /*img: ,*/ price: "$6.00" }
+];
+
+const menuContainer = document.getElementById("menu");
+
+function displayMenu(items) {
+  menuContainer.innerHTML = "";
+  items.forEach(item => {
+    const card = document.createElement("article");
+    card.dataset.category = item.category;
+    card.innerHTML = `
+      <img src="${item.img}" alt="${item.name}">
+      <h2>${item.name}</h2>
+      <p>Category: ${item.category}</p>
+      <p>Price: ${item.price}</p>
+    `;
+    menuContainer.appendChild(card);
+  });
+}
+
+displayMenu(menuItems);
