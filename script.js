@@ -24,7 +24,7 @@ function displayMenu(items) {
     card.dataset.category = item.category;
     card.innerHTML = `
       <img src="${item.img}" alt="${item.name}">
-      <h2>${item.name}</h2>
+      <h3>${item.name}</h3>
       <p>Category: ${item.category}</p>
       <p>Price: ${item.price}</p>
     `;

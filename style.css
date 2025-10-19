@@ -1,15 +1,27 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(fonts/Satoshi-Black.otf);
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Satoshi", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: repeating-linear-gradient(90deg, #b0cae1, #b0cae1 10px, #fff4e4 10px, #fff4e4 20px);
+  /*background-image: repeating-linear-gradient(90deg, #b0cae1, #b0cae1 10px, #fff4e4 10px, #fff4e4 20px);*/
+  background-color: #b0cae1;
 }
 
 header {
   background-color: #4a6478;
   color: white;
   text-align: center;
-  padding: 1em 0;
+  padding: 1em;
+}
+
+header p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5em;
+  margin: 0.5em 0 0 0;
 }
 
 nav {
@@ -25,8 +37,38 @@ label {
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
+  gap: 1em;
+  padding: 1em;
+}
+
+#menu-box {
+  background-color: #f5eee3;          /* White box background */
+  border-radius: 12px;             /* Smooth rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Soft shadow */
+  padding: 2em;                   /* Inner spacing */
+  max-width: auto;                /* Limit box width */
+  margin: 1em auto;               /* Center on page */
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+#menu article {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+#menu article img {
+  width: 100%;
+  border-radius: 6px;
 }
 
 article {
@@ -37,21 +79,22 @@ article {
   transition: transform 0.2s ease;
 }
 
-article:hover {
-  transform: scale(1.03);
-}
-
 article img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-article h2 {
-  margin: 0.5rem;
+article:hover {
+  transform: scale(1.03);
+}
+
+article h3 {
+  margin: 0.5em;
   color: #634306;
 }
 
 article p {
-  margin: 0.5rem;
+  font-size: 0.9em;
+  margin: 0.5em;
 }
