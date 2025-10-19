@@ -9,10 +9,10 @@ const menuItems = [
   { name: "Iced Americano", category: "Iced", img: "img/iced-americano.png", price: "$5.00" },
   { name: "Caramel Frappe", category: "Iced", img: "img/frappe.png", price: "$6.00" },
   { name: "Hot Chocolate", category: "Hot", img: "img/hot-chocolate.png", price: "$3.25" },
-  { name: "Tiramisu", category: "Dessert", /*img: ,*/ price: "$7.50" },
-  { name: "Blueberry Muffin", category: "Dessert", /*img: ,*/ price: "$7.50" },
-  { name: "Strawberry Cheesecake", category: "Dessert", /*img: ,*/ price: "$8.00" },
-  { name: "Glazed Donut", category: "Dessert", /*img: ,*/ price: "$6.00" }
+  { name: "Tiramisu", category: "Dessert", img: "img/tiramisu.png", price: "$7.50" },
+  { name: "Blueberry Muffin", category: "Dessert", img: "img/blueberry-muffin.png", price: "$7.50" },
+  { name: "Strawberry Cheesecake", category: "Dessert", img: "img/cheesecake.png", price: "$8.00" },
+  { name: "Glazed Donut", category: "Dessert", img: "img/donut.png", price: "$6.00" }
 ];
 
 const menuContainer = document.getElementById("menu");
