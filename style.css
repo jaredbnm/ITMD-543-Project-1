@@ -13,11 +13,45 @@ header {
 }
 
 nav {
-  background-color: #fff4e4;
+  background-color: #ffffff;
   padding: 1em;
   text-align: center;
 }
 
 label {
   margin: 1em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+article {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+article:hover {
+  transform: scale(1.03);
+}
+
+article img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+article h2 {
+  margin: 0.5rem;
+  color: #634306;
+}
+
+article p {
+  margin: 0.5rem;
 }
