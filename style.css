@@ -3,6 +3,11 @@
   src: url(fonts/Satoshi-Black.otf);
 }
 
+@font-face {
+  font-family: Satoshi-Regular;
+  src: url(fonts/Satoshi-Regular.otf);
+}
+
 body {
   font-family: "Satoshi", sans-serif;
   margin: 0;
@@ -34,6 +39,23 @@ label {
   margin: 1em;
 }
 
+fieldset {
+  border: 2px solid #ccc;
+  padding: 12px;
+  background-color: #f9f9f9; 
+  border-radius: 8px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+legend {
+  background-color: #b0cae1; 
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 5px;  
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -42,12 +64,12 @@ main {
 }
 
 #menu-box {
-  background-color: #f5eee3;          /* White box background */
-  border-radius: 12px;             /* Smooth rounded corners */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Soft shadow */
-  padding: 2em;                   /* Inner spacing */
-  max-width: auto;                /* Limit box width */
-  margin: 1em auto;               /* Center on page */
+  background-color: #f5eee3;       
+  border-radius: 12px;           
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+  padding: 2em;                   
+  max-width: auto;              
+  margin: 1em auto;         
 }
 
 #menu {
@@ -95,6 +117,7 @@ article h3 {
 }
 
 article p {
+  font-family: "Satoshi-Regular", sans-serif;
   font-size: 0.9em;
   margin: 0.5em;
 }
